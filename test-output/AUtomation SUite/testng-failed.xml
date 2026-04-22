@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Automation Suite]">
+  <listeners>
+    <listener class-name="listeners.MyListeners"/>
+  </listeners>
+  <test thread-count="5" name="LoginTestExecution(failed)">
+    <classes>
+      <class name="tests.OrangeHrmLiveTests">
+        <methods>
+          <include name="AddEmpTest"/>
+          <include name="LoginTest"/>
+          <include name="SetUpReport"/>
+          <include name="SearchEmployee"/>
+          <include name="BrowserSetUp"/>
+          <include name="Logout"/>
+          <include name="tearDownReport"/>
+        </methods>
+      </class> <!-- tests.OrangeHrmLiveTests -->
+    </classes>
+  </test> <!-- LoginTestExecution(failed) -->
+</suite> <!-- Failed suite [Automation Suite] -->
